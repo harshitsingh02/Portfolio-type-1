@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/d2aa42b0ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="./images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+        <div class="container">
+
+            <div class="header-text">
+                <p>Welcome</p>
+                <h1>Hi, I'm <span class="inputt">Harshit Singh.</span></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------about me page--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, harum voluptate eos nemo esse
+                        modi iure sunt ratione. Corrupti tenetur nobis optio deleniti fugiat natus voluptas dolor
+                        officiis aut in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda praesentium
+                        ipsa facere, eaque vero odio nam recusandae optio sunt qui vel aperiam ad modi magni impedit,
+                        quasi consectetur. Voluptatem, obcaecati.</p><br><br>
+
+                    <div class="tab-titles">
+                        <p class="tab-links a-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div id="skills" class="tab-contents a-tab">
+                        <div class="right">
+                            <ul>
+                                <li style="list-style: circle;" class="bar html"> <span class="language"> HTML </span> <span class="percentage"> 90%
+                                    </span> </li>
+                                <li style="list-style: circle;" class="bar css"> <span class="language "> CSS </span> <span class="percentage"> 80%
+                                    </span> </li>
+                                <li style="list-style: circle;" class="bar js"> <span class="language "> Bootstrap </span> <span class="percentage">
+                                        70% </span>
+                                </li>
+                                <li style="list-style: circle;" class="bar bootstrap"> <span class="language "> C++ </span> <span
+                                        class="percentage"> 80%
+                                    </span> </li>
+                                <li style="list-style: circle;" class="bar reactjs"> <span class="language "> Java </span> <span class="percentage">
+                                        30% </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><span>2022-Current</span><br>Full Stack Web developer</li>
+                            <li><span>2021-Current</span><br>GDG Chandigarh Member</li>
+                            <li><span>2021-2022</span><br>IEEE Student Member</li>
+                        </ul>
+                    </div>
+
+
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>2021-Current</span><br>B.E. CSE from Chandigarh University.</li>
+                            <li><span>2020</span><br>12th CBSE Board from AFS Bamrauli.</li> 
+                            <li><span>2018</span><br>10th CBSE Board from AFS Bamrauli.</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services <i class="fa-solid fa-arrow-right"></i></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit libero, perspiciatis cumque fugit
+                        possimus ipsam, rerum unde quae corporis ullam natus voluptatibus nulla omnis. Voluptas eum
+                        obcaecati esse eaque in?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit libero, perspiciatis cumque fugit
+                        possimus ipsam, rerum unde quae corporis ullam natus voluptatibus nulla omnis. Voluptas eum
+                        obcaecati esse eaque in?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit libero, perspiciatis cumque fugit
+                        possimus ipsam, rerum unde quae corporis ullam natus voluptatibus nulla omnis. Voluptas eum
+                        obcaecati esse eaque in?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------Portfolio---------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project Works <i class="fa-solid fa-arrow-right"></i></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae, rerum nemo optio
+                            quas corrupti minus modi veritatis consectetur iure, veniam corporis harum, iste deleniti
+                            fugit officiis cum quod? Illum!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae, rerum nemo optio
+                            quas corrupti minus modi veritatis consectetur iure, veniam corporis harum, iste deleniti
+                            fugit officiis cum quod? Illum!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae, rerum nemo optio
+                            quas corrupti minus modi veritatis consectetur iure, veniam corporis harum, iste deleniti
+                            fugit officiis cum quod? Illum!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn3">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------Contact Me---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me!</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i><a href="mailto:harshit143singh@gmail.com">
+                            harshit143singh@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9076734566</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="text" name="Email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn3 btn4">Submit</button>
+                    </form>
+                    <span id="smsg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Amgine. All rights reserved. Mady By Harshit Singh</p>
+        </div>
+    </div>
+   
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".inputt", {
+            strings: ["Harshit Singh.", "Web Developer.", "Freelancer."],
+            startDelay: 1000,
+            typeSpeed: 70,
+            wait: 1000,
+            backSpeed: 40,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("a-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("a-tab");
+            }
+            event.currentTarget.classList.add("a-link");
+            document.getElementById(tabname).classList.add("a-tab")
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+       
+    </script>
+    <script>
+         let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwljM780mPJtGEDoeRD-VbCabsa8lfR4tIaI4IBpx2D6mH7ToiBCjliHsEDoJDghe-_/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("smsg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    smsg.innerHTML = "Sent Successfully!!!!!"
+                    setTimeout(function () {
+                        smsg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+ <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+</body>
+
+</html>
